@@ -1,0 +1,8 @@
+START WEBSERVER LOCALLY:
+
+go to directory
+run kyai\Scripts\activate
+run python manage.py runserver
+
+PUSH TO GIT:
+open git bash (program)

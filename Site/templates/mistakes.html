@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+             <div class="d-sm-flex align-items-center justify-content-between mb-4">
+               <h1 class="h3 mb-0 text-gray-800">What is AI?</h1>
+
+             </div>
+
+             <!-- Content Row -->
+
+             <div class="row">
+
+               <!-- Area Chart -->
+               <div class="col-xl col-lg">
+                 <div class="card shadow mb-4">
+                   <!-- Card Header - Dropdown -->
+                   <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                     <h6 class="m-0 font-weight-bold text-primary">Human Baby vs Artificial Intelligence</h6>
+                   </div>
+                   <!-- Card Body -->
+                   <div class="card-body">
+                     <div class="chart-image">
+                       <div class="text-center">
+                         <div class="row" >
+                           <div class="col-xl-5">
+                             <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;" src="/static/img/baby.png" alt=""><br />
+
+                            Babies have limited knowledge of the world and so they make many many mistakes. But we forgive them! Babies doesnt know anything yet, they have barely seen the world. <br /><br />
+                           </div>
+                           <div class="col-xl" style="margin:auto; text-align:center">
+                             <h3> When is it ok to make mistakes?
+                             <br /><br />
+                             Why wont AI always get it right?</h3>
+                           </div>
+                           <div class="col-xl-5">
+                             <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;" src="/static/img/robot.png" alt=""><br />
+                              AI initially know nothing of the world either, and its only able to use what we teach them. Lack of data and limited training will lead to inaccurate predictions. Babies get training data constantly, their "computer" is always on and they always keep on learning, soaking everything. AI doesnt get to do that.
+                           </div>
+                         </div>
+                
+                       <div class="row">
+                         <div class="col-xl-5">
+                           <div style="margin-top: 60px">
+                             <iframe width="410" height="215" src="https://www.youtube-nocookie.com/embed/2aK8hy50fS4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                       </div>
+                         <div class="col-xl">
+                         </div>
+                         <div class="col-xl-5">
+                             <div style="margin-top: 60px">
+                             <iframe width="410" height="215" src="https://www.youtube.com/embed/PpqklTWJjHw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                         </div>
+                       </div>
+                       <div class="row h-30">
+                         <div class="col-xl col-lg-7">
+                           <div class="float-right">
+                             <br><br>
+                             <a href="../output/" class="btn btn-info btn-icon-split">
+                               <span class="icon text-white-50">
+                                 <i class="fas fa-arrow-right"></i>
+                               </span>
+                               <span class="text">Continue</span>
+                             </a>
+                           </div>
+                         </div>
+                       </div>
+                       </div>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+
+               <!-- Pie Chart -->
+
+             </div>
+
+    {% endblock %}

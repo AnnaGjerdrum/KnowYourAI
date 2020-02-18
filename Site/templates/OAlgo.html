@@ -1,0 +1,201 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+    <h1 class="h3 mb-1 text-gray-800">Object recognition - Image Classificaion Algorithm</h1><br/>
+    <p class="mb-4">Here you will learn the details about how the algorithm for image classification works. <br />This algorithm can be found in products already on the market, such as the face finder on your camera or automatic trash sorting </p><br /><br />
+
+    <!-- Content Row -->
+    <div class="row">
+
+      <div class="col-lg-10">
+
+        <!-- Default Card Example -->
+        <div class="card mb-4">
+          <div class="card-header">
+            Start from the start
+          </div>
+            <div class="card-body">
+          <div class="row">
+            <div class="col-7">
+              <p>
+                To learn how this image classification works we will need to understand convolutional neural network. But even before that, it is important to know how the traditional classification approach works.
+              </p>
+              <p>
+                When you see this image, what does your brain tell you immediately?
+              </p>
+            </div>
+            <div class="col-2">
+              <img width=250px src="/static/img/dog.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+
+      <div class="card mb-4">
+      <div class="card-header">
+        Features
+      </div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-10">
+              <p>If I guessed it right what your brain would have told you is that it is a dog. How does our brain do that? How do you decide it is a dog and not a human or a cat or a car? </p>
+              <p>The answer is simple, the picture has a round nose, furry hair, long tongue, marble-like eyes which are unique combinations to be in one picture and so your brain immediately told to you it is a dog.</p>
+  <img width=500px src="/static/img/chart.png" /><br /><br />
+              <p>These attributes that I mentioned is called “features”. In a traditional approach, humans use to handpick these features and then plot it in a multidimensional space and try to find an optimal hyperplane to classify different classes. Some of the classification algorithms used were namely Support vector machines, Neural networks, etc. Selecting these features and describing them in the right way was a tedious process.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="card mb-4">
+      <div class="card-header">
+        Layers in a neural network
+      </div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-7">
+              <p>After the invention of the neural networks in 1979 followed by AI winter, the Neural network was again looked into deeply in the 1990’s. Initially, during this period it was used to solve simple problems like number recognition and character recognition. </p>
+              <br />
+              <p>A neural network is built from 3 types of layers. The input layer is the initial data. In the traditional classification, the original image is processed and a feature vector is produced which represents the image. This feature vector will be, say 10-dimensional input to this neural network. Hidden layers are in between a fully connected layer. This is where the network learns the input to classify. You can say by optimizing these parameters the classifier is prepared. The output layer produces the result for the given inputs.  </p>
+            </div>
+            <div class="col-4">
+              <img width=400px src="/static/img/NN.png" />
+              <p style="font-size:10px;">Source : https://towardsdatascience.com/everything-you-need-to-know-about-neural-networks-and-backpropagation-machine-learning-made-easy-e5285bc2be3a</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="card mb-4">
+      <div class="card-header">
+        Advancement of Neural Networks
+      </div>
+        <div class="card-body">
+          <div class="row">
+
+            <div class="col-10">
+              <p>Around 2005 onwards the cost of GPU started to reduce and got much powerful. This helped in the advancement of the neural network and CNN (Convolutional neural network) was introduced. This revolutionalized the way we were doing classification. One big change this brought was to remove the feature extraction step totally as a pre-processing and include it as part of the neural network. </p>
+              <img width=500px src="/static/img/chartX.png" /><br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <!-- 2nd column -->
+      <div class="card mb-4">
+      <div class="card-header">
+      Automization of features
+      </div>
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-7">
+
+            <p>This means now the input to the neural network was the whole image and the network itself will extract features and learn the class. So it was basically optimizing the feature extraction. Now the neural network itself will figure out what it is seeing and why it is a Dog. This very similar to how humans learn. CNN is one of the networks. Similarly, there are other networks also like AlexNet (One of the oldest), LeNet, ResNet, ACGAN, Yolo, etc. To understand how these networks extract the features, below I have shown an image of the network.</p>
+          </div>
+          <div class="col-2">
+            <img width=400px src="/static/img/ML.png" />
+          </div>
+        </div>
+      </div>
+      </div>
+      <br />
+      <div class="card mb-4">
+      <div class="card-header">
+      So how does it extract its features?
+      </div>
+      <div class="card-body">
+        <div class="row">
+
+          <div class="col-10">
+            <img width=800px src="/static/img/CNN2.png" /><br /><br />
+            <p>In this above image, the first 4 layers after the input image are for feature extraction and the fully connected last 2 layers are fully connected layers like the neural network.</p>
+            <br /><br />
+          </div>
+          <div class="row">
+            <div class="col-5">
+              <img width=300px src="/static/img/scanning.gif" /><br /><br />
+            </div>
+            <div class="col-5">
+              <img width=400px src="/static/img/asd.png" /><br /><br />
+            </div>
+          </div>
+          <div class="row">
+              <div class="col-10">
+                <p>In between the first 4 layers there is a convolution operation. It happens as shown in the above animation where some function is applied to extract features and optimize the features. It scans the image and looks at which features part of the picture has. This is way before it can see the whole picture, literally.</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <br />
+      <div class="card mb-4">
+      <div class="card-header">
+      So how does it look?
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-10">
+            <img width=800px src="/static/img/source.gif" /><br /><br />
+          </div>
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <p>In the above image, you can see how different images have different features in the feature map and so the network can learn what is a dog or a frog.Inside each layer will learn different areas of the class to identify, as shown in the below image.</p>
+            </div>
+          </div>
+          <div class="col-10">
+            <img width=800px src="/static/img/features.png" /><br /><br />
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <p>Each row is a class. The left image is how the neural network see the image. You can see how different features are extracted.</p>
+            </div>
+          </div>
+      </div>
+      </div>
+      <br />
+      <div class="card mb-4">
+      <div class="card-header">
+        Process of training a classification model
+      </div>
+      <div class="card-body">
+          <div class="row">
+            <div class="col-10">
+              <p>In supervised Machine learning, there are 2 phases in classification
+              <ul>
+                <li>Training phase: Here the ML algorithm takes the image dataset and trains the ML model like CNN, RNN to learn for the corresponding labels.</li>
+                <li>Prediction phase: In the prediction phase the trained model is taken and the images are passed to the classifier model to predict the output label for which the model is trained.</li>
+              </ul>
+              </p>
+            </div>
+          </div>
+          <div class="col-10">
+            <img width=800px src="/static/img/training.png" /><br />
+          </div>
+          <div class="row">
+            <div class="col-10">
+              <p style="font-size:12px; text-align:center;">Source : http://adilmoujahid.com/posts/2016/06/introduction-deep-learning-python-caffe</p></div>
+          </div>
+      </div>
+      </div>
+      </div>
+      <div class="col-xl-2 col-lg-2">
+      <div>
+      <br><br>
+      <a href="../" class="btn btn-info btn-icon-split">
+        <span class="icon text-white-50">
+          <i class="fas fa-arrow-right"></i>
+        </span>
+        <span class="text">Back to main page</span>
+      </a>
+      </div>
+      </div>
+
+
+    {% endblock %}

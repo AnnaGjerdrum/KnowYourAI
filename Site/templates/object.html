@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+              <h1 class="h3 mb-4 text-gray-800">Object Recognition</h1>
+
+              <div class="row">
+
+
+                <div class="col-lg-12">
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                      <h6 class="m-0 font-weight-bold text-primary">How to?</h6>
+                    </div>
+                    <div class="card-body">
+                      <p>Here we will try to learn your AI how to recognize spesific objects that we choose. </p>
+                      <p>Just like trying to teach babies something, we have to explain what the object is first. Remember, he doesnt know anything about different things yet, this is the first thing he will see!</p>
+                      <p>Write the name of the object in the text field below. An AI require incredible amounts of data, just like we learned earlier, he has to see things mutliple times and from different perspectives. The more you show the object to he the higher chance it is that he will see what it is</p>
+                      <div style="text-align: right">
+                          <a href="../OAlgo/" class="btn btn-info btn-icon-split">
+                          <span class="icon text-white-50">
+                            <i class="fa fa-terminal"></i>
+                          </span> <span class="text">Learn about this spesific algorithm!</span>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div> <!-- row end -->
+              <div class="row">
+                <div class="col-lg-6">
+
+                  <!-- Circle Buttons -->
+                  <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                      <h6 class="m-0 font-weight-bold text-primary">Where the magic happens</h6>
+                    </div>
+                    <div class="card-body">
+
+                        <video autoplay playsinline muted id="webcam" width="100%" height="300px"></video>
+
+                        <button id="class-a" class="Class a btn btn-info btn-icon-split">
+                          <span class="icon text-white-50">
+                            <i class="fas fa-check"></i>
+                          </span> <span class="text">Add Book</span>
+                        </button>
+
+                          <button id="class-b" class="Class b btn btn-info btn-icon-split">
+                            <span class="icon text-white-50">
+                              <i class="fas fa-check"></i>
+                            </span> <span class="text">Add Bottle</span>
+                          </button>
+                          <button id="class-c" class="Class c btn btn-info btn-icon-split">
+                            <span class="icon text-white-50">
+                              <i class="fas fa-check"></i>
+                            </span> <span class="text">Add Human</span>
+                          </button>
+                          <button id="class-d" class="Class d btn btn-info btn-icon-split">
+                            <span class="icon text-white-50">
+                              <i class="fas fa-check"></i>
+                            </span> <span class="text">Add Scissors</span>
+                          </button>
+                          <p>
+                            <br />Press a button repetitively to teach the AI different views of the object. Turn it around, rotate it, show it against a different background... The more times you show him, the more accurate he will be.
+                          </p>
+                      	</div>
+                      	<!-- Load index.js after the content of the page -->
+                          <script src="/static/js/object.js"></script>
+                    </div>
+                    <div class="card shadow mb-4">
+                      <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">Brain</h6>
+                      </div>
+                      <div class="card-body">
+                        <p>Here you can see what the AI is currently thinking about the object you have chosen to show it</p>
+                        <span>
+                          <div class="tab">
+                            <button id="console"></button>
+                          </div>
+
+                        </span>
+
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+
+                    <div class="card shadow mb-4">
+                      <div class="card-header py-3">
+                        <h6 class="m-0 font-weight-bold text-primary">AI</h6>
+                      </div>
+                      <div class="card-body">
+                          <div class="chart-image">
+                            <div class="text-center">
+                              <img id="avatar" class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="height: 500px" src="/static/img/avatar/1.png" alt="">
+                            </div>
+                          </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+              </div> <!-- row end -->
+
+    {% endblock %}

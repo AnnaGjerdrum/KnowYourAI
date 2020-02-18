@@ -6,3 +6,20 @@ run python manage.py runserver
 
 PUSH TO GIT:
 open git bash (program)
+go to directory with manage.py in it
+run $ git status
+  check if we are in the right directory
+run $ git add --all .
+run $ git status
+  check if all the things were added
+run $ git commit -m "ADD COMMIT MESSAGE HERE"
+run $ git push
+
+RELOAD PYTHONANYWHERE
+log in on pythonanywhere
+run $ cd ~/AnnaGjerdrum.eu.pythonanywhere.com
+run $ git pull
+  if it doesnt work try
+    $ git reset HEAD --hard
+    $ git pull origin master -r
+hop on "Web" page and hit reload

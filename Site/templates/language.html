@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+             <h1 class="h3 mb-4 text-gray-800">Teach him to understand you</h1>
+
+             <div class="row">
+
+               <div class="col-lg-6">
+
+                 <!-- Circle Buttons -->
+                 <div class="card shadow mb-4">
+                   <div class="card-header py-3">
+                     <h6 class="m-0 font-weight-bold text-primary">Where the magic happens</h6>
+                   </div>
+                   <div class="card-body">
+                       <!-- heres where the demo goes-->
+                       <span class="text">
+                         Tell your AI what kind of song you want it to play!
+                       </span>
+
+                   </div>
+                 </div>
+                 <div class="card shadow mb-4">
+                   <div class="card-header py-3">
+                     <h6 class="m-0 font-weight-bold text-primary">Voice commands</h6>
+                   </div>
+                   <div class="card-body">
+                       <!-- heres where the demo goes-->
+                       <a href="#"><img style="margin-left: 50px" class="tooltipped-top-click" data-toggle="tooltip" src="/static/img/speech.gif" title="Not implemented yet!" style="size:800px;" /><a/>
+                       <span class="text" style="margin-left:50px;">
+                          Press to speak voice command
+                        </span>
+
+                       <!-- Load index.js after the content of the page -->
+                     <script src="/static/js/voice.py"></script>
+                   </div>
+                 </div>
+                 <div class="card shadow mb-4" style="background-color: lightgrey">
+                   <div class="card-header py-3">
+                     <h6 class="m-0 font-weight-bold text-primary">Output</h6>
+                   </div>
+                   <div class="card-body">
+                       <!-- heres where the demo goes-->
+                       <span id="output">
+                          < Avatar will respond to you here >
+                        </span>
+
+                       <!-- Load index.js after the content of the page -->
+                     <script src="/static/js/voice.py"></script>
+                   </div>
+                 </div>
+
+               </div>
+
+               <div class="col-lg">
+
+                 <div class="card shadow mb-4">
+                   <div class="card-header py-3">
+                     <h6 class="m-0 font-weight-bold text-primary">AI</h6>
+                   </div>
+                   <div class="card-body">
+                       <div class="chart-image">
+                         <div class="text-center">
+                           <div style="position:absolute;top:30%;left:15%;"></div>
+                            <img id="avatar" class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="height: 500px" src="/static/img/avatar/1.png" alt="">
+                          </div>
+                       </div>
+
+                   </div>
+                 </div>
+
+               </div>
+
+             </div>
+
+    {% endblock %}

@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+              <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">What is AI?</h1>
+
+              </div>
+
+              <!-- Content Row -->
+
+              <div class="row">
+
+                <!-- Area Chart -->
+                <div class="col-xl col-lg">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">Human Baby vs Artificial Intelligence</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="chart-image">
+                        <div class="text-center">
+                          <div class="row" >
+                            <div class="col-xl-5">
+                              <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;" src="/static/img/baby.png" alt=""><br />
+
+                              Babies communicate using speech, gestures, action, facial expressions etc. Non verbal communication is very important. Particularly eye contact.
+                            </div>
+                            <div class="col-xl" style="margin:auto; text-align:center">
+                              <h3> How do we communicate our thoughts?
+                              <br /><br />
+                              How do we interact with one another?</h3>
+                            </div>
+                            <div class="col-xl-5">
+                              <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 20rem;" src="/static/img/robot.png" alt=""><br />
+                              AI communicates in many different ways. It can communicate through speech, gestures (in robots), audio and visual cues but also through using text, sounds, graphs or other computer-based medium. AI might have a set of outputs that humans dont have, but is also lacking the versatility and multi faceted communication skills.
+                            </div>
+                          </div>
+                        <div class="row">
+                          <div class="col-xl-5">
+                            <div style="margin-top: 60px">
+                              <iframe width="410" height="215" src="https://www.youtube-nocookie.com/embed/pV7XgPQNuO4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                          <div class="col-xl">
+                          </div>
+                          <div class="col-xl-5">
+                              <div style="margin-top: 60px">
+                              <iframe width="410" height="215" src="https://www.youtube.com/embed/c41V6wRtIdM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row h-30">
+                          <div class="col-xl col-lg-7">
+                            <div class="float-right">
+                              <br><br>
+                              <a href="../where/" class="btn btn-info btn-icon-split">
+                                <span class="icon text-white-50">
+                                  <i class="fas fa-arrow-right"></i>
+                                </span>
+                                <span class="text">Continue to learn about AI usage</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pie Chart -->
+
+              </div>
+    {% endblock %}

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+    {% block content %}
+    <!-- Page Heading -->
+              <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                <h1 class="h3 mb-0 text-gray-800">What about our jobs!</h1>
+
+              </div>
+
+              <!-- Content Row -->
+
+              <div class="row">
+
+                <!-- Area Chart -->
+                <div class="col-xl col-lg">
+                  <div class="card shadow mb-4">
+                    <!-- Card Header - Dropdown -->
+                    <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                      <h6 class="m-0 font-weight-bold text-primary">AI and our jobs</h6>
+                    </div>
+                    <!-- Card Body -->
+                    <div class="card-body">
+                      <div class="chart-image">
+                        <div class="text-center">
+                          <div class="row">
+
+                          <div class="col-7"><br />
+                            <p>While the fear of jobs being taken over by AI can be very real for some fields, there are certain jobs that are perfect for AI.
+                            <br /><br /><br /><br />
+                          </div>
+                          </div>
+                          <div class="row">
+                          <div class="col-4">
+                            <img width=400px src="/static/img/dull.jpg" />
+                            <p style="font-size:20px"> <br />Dull -- Repetitive, boring, predictable</p><br /><br />
+                            <img width=400px src="/static/img/dirty.jpg" />
+                            <p style="font-size:20px"> <br />Dirty -- Muddy, cold, tough</p><br /><br />
+                          </div>
+                          <div class="col-4">
+                            <img width=400px src="/static/img/dangerous.jpg" />
+                            <p style="font-size:20px"> <br />Dangerous -- Avalanche zones, rescue, bomb-defusal</p>
+                            <img width=200px src="/static/img/difficult.jpg" />
+                            <p style="font-size:20px"> <br />Difficult -- Predicting behaviour, repetitive, require time</p><br /><br />
+                          </div>
+                        </div>
+
+                        <div class="row h-30">
+                          <div class="col-xl col-lg-7">
+                            <div class="float-right">
+                              <br><br>
+                              <a href="../learning/" class="btn btn-info btn-icon-split">
+                                <span class="icon text-white-50">
+                                  <i class="fas fa-arrow-right"></i>
+                                </span>
+                                <span class="text">Continue</span>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Pie Chart -->
+
+              </div>
+
+    {% endblock %}
